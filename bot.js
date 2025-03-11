@@ -113,6 +113,37 @@ client.on('message', async (message) => {
         if (timePattern.test(time)) {
             clientData[user].time = time;
             clientData[user].step = 5;
+
+            // Verificar disponibilidad del profesional
+            const citaExistente = await Cita.findOne({
+                professional: clientData[user].professional,
+                date: clientData[user].date,
+                time: clientData[user].time
+            });
+
+            if (citaExistente) {
+                message.reply(`Lo siento, ${clientData[user].professional} ya tiene una cita a las ${clientData[user].time} el ${clientData[user].date}. Por favor, elige otro horario.`);
+                return;
+            }
+
+            // Verificar el siguiente intervalo de 30 minutos
+            const nextTime = new Date(`1970-01-01T${time}:00Z`); // Crear un objeto de tiempo
+            nextTime.setMinutes(nextTime.getMinutes() + 30); // Añadir 30 minutos
+
+            const nextTimeStr = nextTime.toISOString().substr(11, 5); // Convertir a formato HH:MM
+
+            // Verificar si el siguiente intervalo de tiempo está disponible
+            const citaNextTime = await Cita.findOne({
+                professional: clientData[user].professional,
+                date: clientData[user].date,
+                time: nextTimeStr
+            });
+
+            if (citaNextTime) {
+                message.reply(`Lo siento, el siguiente horario disponible es a las ${nextTimeStr}.`);
+                return;
+            }
+
             message.reply('¡Todo listo! Por favor, envíame tu nombre completo.');
             return;
         } else {
@@ -147,8 +178,9 @@ client.on('message', async (message) => {
             });
 
         // Implementar recordatorio de 24 horas antes de la cita
-        setTimeout(() => {
-            message.reply(`¡Recordatorio! Tu cita está programada para mañana a las ${clientData[user].time}. ¡Nos vemos pronto!`);
+        setTimeout(async () => {
+            // Enviar recordatorio al usuario
+            await client.sendMessage(user, `¡Recordatorio! Tu cita está programada para mañana a las ${clientData[user].time}. ¡Nos vemos pronto!`);
         }, 24 * 60 * 60 * 1000); // 24 horas en milisegundos
     }
 });
