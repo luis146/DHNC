@@ -1,2 +1,3 @@
-2025/03/10-21:47:13.467 3a30 Creating DB C:\Users\josue\Documents\Uni\Ing_Software\DHNC\mi-bot-whatsapp\.wwebjs_auth\session\Default\shared_proto_db\metadata since it was missing.
-2025/03/10-21:47:13.504 3a30 Reusing MANIFEST C:\Users\josue\Documents\Uni\Ing_Software\DHNC\mi-bot-whatsapp\.wwebjs_auth\session\Default\shared_proto_db\metadata/MANIFEST-000001
+2025/03/11-21:56:00.580 525c Reusing MANIFEST C:\Users\josue\Documents\Uni\Ing_Software\DHNC\mi-bot-whatsapp\.wwebjs_auth\session\Default\shared_proto_db\metadata/MANIFEST-000001
+2025/03/11-21:56:00.605 525c Recovering log #3
+2025/03/11-21:56:00.606 525c Reusing old log C:\Users\josue\Documents\Uni\Ing_Software\DHNC\mi-bot-whatsapp\.wwebjs_auth\session\Default\shared_proto_db\metadata/000003.log 

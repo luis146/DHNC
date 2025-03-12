@@ -1,13 +1,11 @@
-2025/03/10-22:16:27.361 27c0 Reusing MANIFEST C:\Users\josue\Documents\Uni\Ing_Software\DHNC\mi-bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/10-22:16:27.361 27c0 Recovering log #70
-2025/03/10-22:16:27.372 27c0 Reusing old log C:\Users\josue\Documents\Uni\Ing_Software\DHNC\mi-bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000070.log 
-2025/03/10-22:16:28.824 2ef0 Level-0 table #75: started
-2025/03/10-22:16:28.834 2ef0 Level-0 table #75: 101532 bytes OK
-2025/03/10-22:16:28.835 2ef0 Delete type=0 #70
-2025/03/10-22:16:28.836 2ef0 Manual compaction at level-0 from '\x00%\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00&\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/03/10-22:16:30.183 5c54 Compacting 1@1 + 1@2 files
-2025/03/10-22:16:30.224 5c54 Generated table #76@1: 34031 keys, 1386597 bytes
-2025/03/10-22:16:30.224 5c54 Compacted 1@1 + 1@2 files => 1386597 bytes
-2025/03/10-22:16:30.225 5c54 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/03/10-22:16:30.225 5c54 Delete type=2 #72
-2025/03/10-22:16:30.225 5c54 Delete type=2 #75
+2025/03/11-16:55:21.981 2b50 Reusing MANIFEST C:\Users\josue\Documents\Uni\Ing_Software\DHNC\mi-bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/11-16:55:21.982 2b50 Recovering log #94
+2025/03/11-16:55:22.122 2b50 Reusing old log C:\Users\josue\Documents\Uni\Ing_Software\DHNC\mi-bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000094.log 
+2025/03/11-16:55:25.263 44d0 Level-0 table #99: started
+2025/03/11-16:55:25.301 44d0 Level-0 table #99: 1352905 bytes OK
+2025/03/11-16:55:25.302 44d0 Delete type=0 #94
+2025/03/11-16:55:25.303 44d0 Manual compaction at level-0 from '\x00,\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/11-16:55:27.120 4d18 Compacting 1@1 + 1@2 files
+2025/03/11-16:55:27.208 4d18 Generated table #100@1: 42839 keys, 1755720 bytes
+2025/03/11-16:55:27.208 4d18 Compacted 1@1 + 1@2 files => 1755720 bytes
+2025/03/11-16:55:27.209 4d18 compacted to: files[ 0 0 1 0 0 0 0 ]
